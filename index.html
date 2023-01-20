@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASER Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <img class="logo" width="250px" src="img/logo (2).png" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-5 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">¡CALENDARIO!</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BODAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">LÁMINAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PAPELERÍA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CURSOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
+<main>
+
+  <form class="formulario container" id="formulario">
+
+    <div class="form-group row formulario__grupo" id="grupo__nombre">
+      <label for="colFormLabelLg nombre" class="col-sm-5 col-form-label col-form-label-lg formulario__label">Nombre</label>
+      <div class="col-sm-5 formulario__grupo-input">
+        <input type="text" class="form-control form-control-lg formulario__input" id="colFormLabelLg" placeholder="Tu nombre" name="nombre">
+        <i class="formulario__validacion-estado fa-solid fa-circle-exclamation"></i>
+			</div>
+      <p class="formulario__input-error">Por favor, completa tu nombre correctamente!</p>
+    </div>
+
+    <br>
+
+    <div class="form-group row formulario__grupo" id="grupo__apellidos">
+      <label for="colFormLabelLg apellidos" class="col-sm-5 col-form-label col-form-label-lg formulario__label">Apellidos</label>
+      <div class="col-sm-5" class="formulario__grupo-input">
+        <input type="text" class="form-control form-control-lg formulario__input" id="colFormLabelLg" placeholder="Tus apellidos" name="apellidos">
+        <i class="formulario__validacion-estado fa-solid fa-circle-exclamation"></i>
+      </div>
+      <p class="formulario__input-error">Por favor, completa tus apellidos!</p>
+    </div>
+
+    <br>
+
+    <div class="form-group row formulario__grupo" id="grupo__ciudad">
+      <label for="colFormLabelLg ciudad" class="col-sm-5 col-form-label col-form-label-lg formulario__label">Ciudad de residencia</label>
+      <div class="col-sm-5 formulario__grupo-input">
+        <input type="text" class="form-control form-control-lg formulario__input" id="colFormLabelLg" placeholder="Ciudad" name="ciudad">
+        <i class="formulario__validacion-estado fa-solid fa-circle-exclamation"></i>
+      </div>
+      <p class="formulario__input-error">Por favor, dinos tu ciudad!</p>
+    </div>
+
+    <br>
+
+    <div class="form-group row">
+      <label for="colFormLabelLg" class="col-sm-5 col-form-label col-form-label-lg">Fecha de tu evento</label>
+      <div class="col-sm-5">
+        <input type="date" class="form-control form-control-lg" id="dates" placeholder="">
+      </div>
+    </div>
+
+    <br>
+
+    <div class="form-group row">
+      <label for="colFormLabelLg" class="col-sm-5 col-form-label col-form-label-lg">Producto de interés</label>
+      <div class="col-sm-5 options">
+        <div class="form-check form-check-inline form-control-lg">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label::placeholder class="form-check-label" for="inlineCheckbox1" >Papelería de Bodas</label>
+        </div>
+        <div class="form-check form-check-inline form-control-lg">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label::placeholder class="form-check-label" for="inlineCheckbox2" >Láminas</label>
+        </div>
+        <div class="form-check form-check-inline form-control-lg">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label::placeholder class="form-check-label" for="inlineCheckbox3" >Otros</label>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="form-group row" class="formulario__grupo" id="grupo__asunto">
+      <label for="colFormLabelLg asunto" class="col-sm-5 col-form-label col-form-label-lg formulario__label">Asunto</label>
+      <div class="col-sm-5" class="formulario__grupo-input">
+        <input type="text" class="form-control form-control-lg formulario__input" id="colFormLabelLg" placeholder="Motivo de la consulta" name="asunto">
+        <i class="formulario__validacion-estado fa-solid fa-circle-exclamation"></i>
+      </div>
+      <p class="formulario__input-error">Por favor, describe el asunto!</p>
+    </div>
+
+    <br>
+
+    <div class="form-group row" class="formulario__grupo" id="grupo__consulta">
+      <label for="colFormLabelLg consulta" class="col-sm-5 col-form-label col-form-label-lg formulario__label">Consulta</label>
+      <div class="col-sm-5 formulario__grupo-input">
+        <input type="text"class="form-control form-control-lg formulario__input" id="colFormLabelLg" placeholder="Cuéntanos" name="consulta">
+        <i class="formulario__validacion-estado fa-solid fa-circle-exclamation"></i>
+      </div>
+      <p class="formulario__input-error">Por favor, desarrolla tu consulta!</p>
+    </div>
+
+    <br>
+
+    <div class="form-group row" class="formulario__grupo" id="grupo__telefono">
+    <label for="colFormLabelLg telefono" class="col-sm-5 col-form-label col-form-label-lg formulario__label">Teléfono</label>
+      <div class="col-sm-5 formulario__grupo-input">
+        <input type="text" class="form-control form-control-lg formulario__input" id="colFormLabelLg" placeholder="+34 000 000 000" name="telefono">
+        <i class="formulario__validacion-estado fa-solid fa-circle-exclamation"></i>
+      </div>
+      <p class="formulario__input-error">Por favor, revisa tu numero de teléfono!</p>
+    </div>
+
+    <br>
+
+    <div class="form-group row" class="formulario__grupo" id="grupo__email">
+      <label for="colFormLabelLg email" class="col-sm-5 col-form-label col-form-label-lg formulario__label">Email</label>
+      <div class="col-sm-5 formulario__grupo-input">
+        <input type="email" class="form-control form-control-lg formulario__input" id="colFormLabelLg" placeholder="email@gmail.com" name="email">
+        <i class="formulario__validacion-estado fa-solid fa-circle-exclamation"></i>
+      </div>
+      <p class="formulario__input-error">Por favor, escribe tu email correctamente!</p>
+    </div>
+
+    <br>
+
+    <div class="form-group row" class="formulario__grupo" id="grupo__instagram">
+      <label for="colFormLabelLg instagram" class="col-sm-5 col-form-label col-form-label-lg formulario__label">¿Dónde nos conociste?</label>
+      <div class="col-sm-5 formulario__grupo-input">
+        <input type="text" class="form-control form-control-lg formulario__input" id="colFormLabelLg" placeholder="¿Instagram?" name="instagram">
+        <i class="formulario__validacion-estado fa-solid fa-circle-exclamation"></i>
+      </div>
+      <p class="formulario__input-error">Nos es de mucha ayuda saber cómo llegaste aquí!</p>
+    </div>
+
+    <br>
+
+    <div class="formulario__grupo form-group row" id="grupo__terminos">
+      <label class="formulario__label col-sm-5 col-form-label col-form-label-lg" for="colFormLabelLg">
+        <a href="https://pdf.ac/Dha4y">Política de privacidad</a>
+      </label>
+      <div class="col-sm-5">
+        <input class="formulario__checkbox form-check-input" type="checkbox" name="terminos" id="terminos" value="option1">
+      </div>
+    </div>
+
+    <div class="formulario__mensaje" id="formulario__mensaje">
+        <p>Vaya, ¡Faltan campos de formulario!</p>
+    </div>
+
+    <div class="formulario__grupo formulario__grupo-btn-enviar enviar">
+      <button type="submit" class="formulario__btn btn btn-primary">Enviar formulario</button>
+      <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Formulario enviado! Gracias</p>
+    </div>
+
+  </form>
+
+</main>
+
+<script src="./form.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+</body>
+</html>

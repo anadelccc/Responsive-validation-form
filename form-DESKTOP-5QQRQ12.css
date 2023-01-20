@@ -1,0 +1,107 @@
+@font-face {
+  font-family: AbhayaLibreMedium;
+  src: url(AbhayaLibre-Medium.ttf);
+}
+body {
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+
+main {
+  font-family: AbhayaLibreMedium !important;
+}
+
+form {
+  line-height: 1px;
+  margin-top: 5rem;
+}
+
+.form-check-inline {
+  line-height: 25px !important;
+  margin-left: 25px !important;
+}
+
+.row {
+  align-items: center !important;
+}
+
+.col-form-label-lg {
+  text-align: end !important;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-control {
+  width: 300px !important;
+  padding: 0.3rem !important;
+}
+
+.form-control-lg {
+  font-size: medium !important;
+  color: rgb(118, 118, 118) !important;
+  min-height: 5px !important;
+  padding: 8px !important;
+}
+
+.formulario__grupo-correcto {
+  color: green;
+  opacity: 1;
+}
+
+.formulario__grupo-incorrecto {
+  color: red;
+  opacity: 1;
+}
+
+label {
+  color: #444;
+  font-size: 25px !important;
+}
+
+button {
+  font-size: 25px !important;
+}
+
+.col-sm-5 {
+  text-align: auto !important;
+  display: flex;
+  align-items: center;
+}
+
+.enviar {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.btn-primary {
+  background-color: #D9857E !important;
+}
+
+.btn {
+  border: none !important;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator, input[type=time]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 2px;
+  opacity: 0.7;
+  filter: invert(0.7);
+}
+
+@media screen and (max-width: 800px) {
+  form, body {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  .col-sm-5 {
+    text-align: center !important;
+    justify-content: center !important;
+  }
+  .row {
+    margin-left: 0px !important;
+  }
+}/*# sourceMappingURL=form-DESKTOP-5QQRQ12.css.map */
